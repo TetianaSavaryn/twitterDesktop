@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to bottom, #2997d8, #44bbee);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.concordia.controller.WelcomeController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="291.0" prefWidth="660.0">
+         <children>
+            <AnchorPane layoutX="40.0" layoutY="41.0" prefHeight="295.0" prefWidth="700.0" style="-fx-background-color: #6fc1e8;" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
+               <children>
+                  <Button fx:id="newTweetButton" layoutX="237.0" layoutY="244.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="106.0" style="-fx-background-color: linear-gradient(to bottom, #d60064, #b4004e); -fx-background-radius: 10em;" text="New Tweet" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="welcomeLabel" alignment="CENTER" layoutX="164.0" layoutY="24.0" prefHeight="21.0" prefWidth="253.0" text="Welcome, username!" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Helvetica" size="18.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="homeLink" layoutX="496.0" layoutY="246.0" text="Sign out" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Helvetica Bold" size="13.0" />
+                     </font>
+                  </Hyperlink>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="215.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/twit_twitter_social%20network_icon.png" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink fx:id="countLabel" layoutX="14.0" layoutY="246.0" text="There are XXX tweets" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Helvetica Bold" size="13.0" />
+                     </font>
+                  </Hyperlink>
+                  <Button fx:id="contactButton" layoutX="452.0" layoutY="21.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="106.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10em;" text="Contact Us" textFill="#5188c2">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
