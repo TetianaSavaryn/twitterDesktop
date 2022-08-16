@@ -1,7 +1,5 @@
 package com.concordia.model;
 
-import com.concordia.database.DBHandler;
-
 import java.sql.Timestamp;
 
 public class Tweet {

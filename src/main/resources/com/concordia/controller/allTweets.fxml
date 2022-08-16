@@ -16,22 +16,27 @@
                <children>
                   <AnchorPane layoutX="40.0" layoutY="41.0" prefHeight="295.0" prefWidth="700.0" style="-fx-background-color: #6fc1e8;" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
                      <children>
-                        <Button fx:id="newTweetButton" layoutX="472.0" layoutY="10.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="86.0" style="-fx-background-color: linear-gradient(to bottom, #d60064, #b4004e); -fx-background-radius: 10em;" text="New Tweet" textFill="WHITE">
+                        <Button fx:id="newTweetButton" layoutX="472.0" layoutY="13.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="86.0" style="-fx-background-color: linear-gradient(to bottom, #d60064, #b4004e); -fx-background-radius: 10em;" text="New Tweet" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>
                         </Button>
-                        <Hyperlink fx:id="homeLink" layoutX="484.0" layoutY="260.0" text="Sign out" textFill="WHITE" underline="true">
+                        <Hyperlink fx:id="homeLink" layoutX="516.0" layoutY="260.0" text="Sign out" textFill="WHITE" underline="true">
                            <font>
                               <Font name="Helvetica Bold" size="13.0" />
                            </font>
                         </Hyperlink>
                         <ListView fx:id="tweetsListView" layoutX="14.0" layoutY="11.0" prefHeight="273.0" prefWidth="446.0" />
-                        <ImageView fitHeight="207.0" fitWidth="96.0" layoutX="467.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="204.0" fitWidth="87.0" layoutX="471.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@assets/rocket_twitter_icon.png" />
                            </image>
                         </ImageView>
+                        <Hyperlink fx:id="homeLink1" layoutX="464.0" layoutY="260.0" text="Home" textFill="WHITE" underline="true">
+                           <font>
+                              <Font name="Helvetica Bold" size="13.0" />
+                           </font>
+                        </Hyperlink>
                      </children>
                   </AnchorPane>
                </children>

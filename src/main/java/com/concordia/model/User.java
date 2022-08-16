@@ -2,6 +2,7 @@ package com.concordia.model;
 
 public class User {
 
+    private int id;
     private String username;
     private String firstName;
     private String lastName;
@@ -10,11 +11,27 @@ public class User {
     public User() {
     }
 
+    public User(int id, String username, String firstName, String lastName, String password) {
+        this.id = id;
+        this.username = username;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.password = password;
+    }
+
     public User(String username, String firstName, String lastName, String password) {
         this.username = username;
         this.firstName = firstName;
         this.lastName = lastName;
         this.password = password;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getUsername() {

@@ -8,7 +8,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -54,6 +53,7 @@ public class LoginController {
                 if(resultSet != null && resultSet.next()) {
                     userId = resultSet.getInt("id");
                     NewTweetController.userId = userId;
+                    WelcomeController.user = user;
                     showWelcomeScreen(user);
                 } else {
                     new Shaker(loginButton).shake();
@@ -67,7 +67,7 @@ public class LoginController {
             signupButton.getScene().getWindow().hide();
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource("signUp.fxml"));
-            changeScene(fxmlLoader, false);
+            changeScene(fxmlLoader, true);
         });
 
         usernameEntry.setOnKeyReleased(keyEvent -> handleKeyReleased());
@@ -82,6 +82,7 @@ public class LoginController {
         boolean disableButton = username.isEmpty() || password.isEmpty();
         loginButton.setDisable(disableButton);
     }
+
     private void showWelcomeScreen(User user) {
         loginButton.getScene().getWindow().hide();
         FXMLLoader fxmlLoader = new FXMLLoader();

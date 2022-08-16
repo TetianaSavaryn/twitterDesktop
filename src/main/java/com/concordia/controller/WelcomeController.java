@@ -1,6 +1,7 @@
 package com.concordia.controller;
 
 import com.concordia.database.DBHandler;
+import com.concordia.model.User;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -29,6 +30,8 @@ public class WelcomeController {
     @FXML
     private Button contactButton;
 
+    public static User user;
+
     @FXML
     void initialize() {
 
@@ -44,6 +47,7 @@ public class WelcomeController {
             countLabel.getScene().getWindow().hide();
 
             FXMLLoader fxmlLoader = new FXMLLoader();
+            AllTweetsController.user = user;
             fxmlLoader.setLocation(getClass().getResource("allTweets.fxml"));
             changeScene(fxmlLoader, true);
         });
@@ -80,7 +84,7 @@ public class WelcomeController {
     }
 
     void setLabels(String username) {
-        this.welcomeLabel.setText("Welcome, " + username);
+        this.welcomeLabel.setText("Welcome, " + user.getUsername());
     }
 
 

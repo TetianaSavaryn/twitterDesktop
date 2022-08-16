@@ -97,6 +97,7 @@ public class DBHandler extends Config {
         return resultSet;
     }
 
+
     // Get number of tweets
     public int getTweetsNumber() {
 
